@@ -1,0 +1,35 @@
+{
+  "audio": {
+    "sample_rate": 44100,
+    "tone_duration": 0.33,
+    "silence_duration": 0.3,
+    "fade_duration": 0.01
+  },
+  "testing": {
+    "frequency_bands": 15,
+    "min_frequency": 125,
+    "max_frequency": 16000,
+    "intensity_levels": [
+      0.1,
+      0.3,
+      0.6,
+      1.0
+    ],
+    "randomize_order": true,
+    "inter_test_delay_range": [
+      0.75,
+      1.25
+    ]
+  },
+  "calibration": {
+    "default_volume": 0.5,
+    "calibration_frequency": 1000,
+    "calibration_intensity": 0.5,
+    "saved_volume": 0.44
+  },
+  "ui": {
+    "window_size": "800x600",
+    "show_frequency_during_test": false,
+    "auto_save_results": true
+  }
+}
