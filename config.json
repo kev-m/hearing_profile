@@ -28,7 +28,7 @@
     "saved_volume": 0.44
   },
   "ui": {
-    "window_size": "800x600",
+    "window_size": "1000x800",
     "show_frequency_during_test": false,
     "auto_save_results": true
   }

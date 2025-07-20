@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Hearing Profiler Application
+Qualitative hearing analysis.
 
 A Python application that generates frequency tones to map hearing range
 and create a hearing sensitivity graph for each ear.
 """
+# Semantic Versioning according to https://semver.org/spec/v2.0.0.html
+__version__ = "0.1.2" # Patch level, to use pyproject.toml, etc.
 
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
@@ -257,7 +259,7 @@ class HearingProfiler:
         self.canvas = FigureCanvasTkAgg(self.fig, results_frame)
         self.canvas.get_tk_widget().grid(row=0,
                                          column=0,
-                                         columnspan=2,
+                                         columnspan=3,
                                          sticky="ewns")
 
         ttk.Button(results_frame,
@@ -875,7 +877,11 @@ class HearingProfiler:
         import sys
         sys.exit(0)
 
-
-if __name__ == "__main__":
+def main():
+    print("HearingProfiler - starting")
     app = HearingProfiler()
     app.run()
+    print("HearingProfiler - done!")
+
+if __name__ == "__main__":
+    main()
